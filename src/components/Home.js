@@ -1,5 +1,6 @@
 import React from "react"
-import {Ian, Bubble} from "../styles/homestyles"
+import {Ian, Bubble, Segment} from "../styles/homestyles"
+import {Reveal} from "semantic-ui-react"
 
 class Home extends React.Component {
 
@@ -16,19 +17,29 @@ class Home extends React.Component {
   renderContainer = (open) => {
     if (open === false)
       return(
-        <Bubble>
-        <Ian fontSize='large' onClick={this.handleClick}>
-          IC
-        </Ian>
-      </Bubble>
+        <>
+            <Ian fontSize='large' onClick={this.handleClick}>
+              IC
+            </Ian>
+          <Bubble>
+          </Bubble>
+        </>
       )
     else
       return(
-        <Bubble grow={true}>
-        <Ian fontSize='large' onClick={this.handleClick}>
-          IC
-        </Ian>
-      </Bubble>
+        <>
+          <Ian grow fontSize='large' onClick={this.handleClick}>
+            IC
+          </Ian>
+          <Bubble grow >
+              <Segment>
+                Hi my name is Ian. aoaseif aosdifwa saoidfj oaisf oasodfho oaisdf oaisdfoao aosifh oaisdf oaisdjf
+              </Segment>
+              <Segment>
+                Hi my name is Ian. aoaseif aosdifwa saoidfj oaisf oasodfho oaisdf oaisdfoao aosifh oaisdf oaisdjf
+              </Segment>
+          </Bubble>
+        </>
       )
   }
 
