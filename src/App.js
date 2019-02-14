@@ -9,11 +9,10 @@ import Particles from './components/Particles';
 
 const App = () => (
   <>
-    <Navbar/>
+    {/* <Navbar/> */}
       <Container>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About}/>
           <Route component={NoMatch} />
         </Switch>
       </Container >

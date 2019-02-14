@@ -1,24 +1,13 @@
 import styled from 'styled-components';
 
-const fontSize = (size) => {
-  switch(size) {
-    case 'large':
-      return '4rem';
-    case 'small':
-      return '1rem';
-    default:
-      return '2rem';
-  }
-}
-
 const grow = (full) => {
   switch(full) {
     case false:
-      return '5em';
+      return '7em';
     case true:
       return '45vw';
     default:
-      return '5em';
+      return '7em';
   }
 }
 
@@ -32,6 +21,7 @@ const square = (full) => {
       return "100%";
   }
 }
+
 
 const colors = (full) => {
   switch(full) {
@@ -55,12 +45,22 @@ const bcolors = (full) => {
   }
 }
 
+
+const active = (val) => {
+  if (val === true)
+    return "rgba(255, 255, 255, 0.5)"
+  else
+    return "rgba(255, 255, 255, 0)"
+}
+
 export const Ian = styled.h1`
   color: ${props => colors(props.grow)};
   font-size: 4em !important;
   cursor: pointer;
   z-index: 200;
-  padding-top: 10px;
+  padding-top: 20px;
+  font-family: 'Monoton', cursive;
+
   `
 
 export const Container = styled.div `
@@ -75,10 +75,14 @@ export const Container = styled.div `
   margin: 0 47%;
 `
 
-export const Segment = styled.div `
-  border: 1px solid black;
-  height: 15em;
-  margin: 3em;
+export const Content = styled.div `
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid cyan;
 `
 
 export const Bubble = styled.div`
@@ -88,10 +92,6 @@ export const Bubble = styled.div`
   color: ${props => colors(props.grow)};
   border: 2px solid black;
   border-radius: ${props => square(props.grow)};
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  justify-content: center;
-  align-items: center;
   transition: 1s ease-in-out;
 `

@@ -1,8 +1,9 @@
 body, html {
 	height: 100%;
-	background-repeat: no-repeat;    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+	background-repeat: no-repeat;
 	background:white;
 	position: relative;
+	font-family: 'Roboto', sans-serif;
 }
 
 .desc {
@@ -10,6 +11,25 @@ body, html {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: 'Bentham', serif;
+
+}
+
+
+.menu-appear {
+  opacity: 0;
+}
+
+.menu-appear.menu-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out .5s;
+}
+
+.tab-appear {
+  opacity: 0;
+}
+
+.tab-appear.tab-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out .8s;
 }
