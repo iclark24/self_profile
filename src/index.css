@@ -25,11 +25,74 @@ code {
 	transition: opacity .5s ease-in-out .5s;
 }
 
-.tab-appear {
+.tab1-appear {
   opacity: 0;
 }
 
-.tab-appear.tab-appear-active {
+.tab1-appear.tab1-appear-active {
   opacity: 1;
 	transition: opacity .5s ease-in-out .8s;
+}
+
+.tab2-appear {
+  opacity: 0;
+}
+
+.tab2-appear.tab2-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out 1.3s;
+}
+
+.link-appear {
+  opacity: 0;
+}
+
+.link-appear.link-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out .5s;
+}
+
+.link1-appear {
+  opacity: 0;
+}
+
+.link1-appear.link1-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out .75s;
+}
+
+.link2-appear {
+  opacity: 0;
+}
+
+.link2-appear.link2-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out 1s;
+}
+
+.link3-appear {
+  opacity: 0;
+}
+
+.link3-appear.link3-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out 1.25s;
+}
+
+.link4-appear {
+  opacity: 0;
+}
+
+.link4-appear.link4-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out 1.5s;
+}
+
+.link5-appear {
+  opacity: 0;
+}
+
+.link5-appear.link5-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out 1.75s;
 }

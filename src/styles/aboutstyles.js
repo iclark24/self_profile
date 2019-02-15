@@ -11,20 +11,6 @@ const position = (position) => {
   }
 }
 
-const visible = (visible) => {
-  if (visible === true)
-    return "visible"
-  else
-    return "hidden"
-}
-
-const viewable = (visible) => {
-  if (visible === true)
-    return "rgba(255, 255, 255, 1)"
-  else
-    return "rgba(255, 255, 255, 0)"
-}
-
 const blank = (val) => {
   if (val === true)
     return "10vh"

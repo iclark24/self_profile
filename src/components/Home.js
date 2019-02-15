@@ -1,9 +1,10 @@
 import React from "react"
 import {Ian, Bubble, Content} from "../styles/homestyles"
 import {Menu, Tab} from "../styles/tabstyles"
-import {Segment} from "../styles/aboutstyles"
+import Projects from "../components/Projects"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import About from "./About"
+import Contacts from "./Contacts"
 class Home extends React.Component {
 
   state = { 
@@ -32,12 +33,16 @@ class Home extends React.Component {
     const {activeItem} = this.state
     if (activeItem === "about") 
       return(
-          <About/>
+        <About/>
       )
     else if (activeItem === "projects")
-      return(null)
+      return(
+        <Projects/>
+      )
     else
-      return(null)
+      return(
+        <Contacts/>
+      )
   }
 
   render() {

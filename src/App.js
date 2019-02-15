@@ -6,6 +6,7 @@ import NoMatch from './components/NoMatch'
 import Navbar from "./components/Navbar";
 import { Container, } from "./styles/homestyles";
 import Particles from './components/Particles';
+import Footer from './components/Footer'
 
 const App = () => (
   <>
@@ -17,6 +18,7 @@ const App = () => (
         </Switch>
       </Container >
       <Particles/>
+      <Footer/>
   </>
 );
 

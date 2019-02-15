@@ -94,4 +94,5 @@ export const Bubble = styled.div`
   border-radius: ${props => square(props.grow)};
   position: absolute;
   transition: 1s ease-in-out;
+  overflow: hidden;
 `
