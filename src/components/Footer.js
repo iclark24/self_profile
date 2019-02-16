@@ -3,7 +3,10 @@ import {Foot} from "../styles/footerstyles"
 
 const Footer = () => (
   <>
-    <Foot>Foot Info here</Foot>
+    <Foot>
+      <div style={{ color: "red"}}>WIP</div>
+      <div>Designed and Developed by Ian Clark, 2019</div>
+    </Foot>
   </>
 );
 

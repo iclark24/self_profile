@@ -96,3 +96,12 @@ code {
   opacity: 1;
 	transition: opacity .5s ease-in-out 1.75s;
 }
+
+.link6-appear {
+  opacity: 0;
+}
+
+.link6-appear.link6-appear-active {
+  opacity: 1;
+	transition: opacity .5s ease-in-out 2s;
+}

@@ -1,6 +1,9 @@
 import React from "react";
 import {Segment, Option, Img} from "../styles/projectstyles"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import dnd from '../Images/dnd.png'
+import sky from '../Images/Sky_SLC_White.svg'
+import logo from '../Images/logo.svg'
 
 
 const Projects = () => (
@@ -13,10 +16,10 @@ const Projects = () => (
         transitionEnter={false}
         transitionLeave={false}
       >
-        <Option href="https://adoring-kalam-51f08f.netlify.com/" target="_blank">
-          <Img/>
+        <Option href="https://allogsheet.herokuapp.com/" target="_blank">
+          <Img src={dnd}/>
           <p>
-            Brief Description of the website above.
+            (WIP) Rails & React Dungeons and Dragons Character Tracker
           </p>
         </Option>
       </ReactCSSTransitionGroup>
@@ -27,10 +30,10 @@ const Projects = () => (
         transitionEnter={false}
         transitionLeave={false}
       >
-        <Option href="https://mystifying-ardinghelli-969588.netlify.com/" target="_blank">
-          <Img/>
+          <Option href="https://mw-table-app.herokuapp.com" target="_blank">
+          <Img src={sky}/>
           <p>
-            Brief Description of the website above.
+            Rails & React Night Club Ticketing and Reservation App
           </p>
         </Option>
       </ReactCSSTransitionGroup>
@@ -41,10 +44,10 @@ const Projects = () => (
         transitionEnter={false}
         transitionLeave={false}
       >
-        <Option href="" target="_blank">
-          <Img/>
+        <Option href="https://adoring-kalam-51f08f.netlify.com/" target="_blank">
+          <Img src={logo}/>
           <p>
-            Brief Description of the website above.
+            React Flash Cards App
           </p>
         </Option>
       </ReactCSSTransitionGroup>
@@ -58,14 +61,14 @@ const Projects = () => (
         transitionEnter={false}
         transitionLeave={false}
       >
-        <Option href="" target="_blank">
-          <Img/>
+        <Option href="https://mystifying-ardinghelli-969588.netlify.com/" target="_blank">
+          <Img src={logo}/>
           <p>
-            Brief Description of the website above.
+            React Grocery List App
           </p>
         </Option>
       </ReactCSSTransitionGroup>
-      <ReactCSSTransitionGroup
+      {/* <ReactCSSTransitionGroup
         transitionName="link4"
         transitionAppear={true}
         transitionAppearTimeout={10000}
@@ -92,7 +95,7 @@ const Projects = () => (
             Brief Description of the website above.
           </p>
         </Option>
-      </ReactCSSTransitionGroup>
+      </ReactCSSTransitionGroup> */}
     </Segment>
     </>
 );

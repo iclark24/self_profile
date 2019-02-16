@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Foot = styled.div `
   height: 50px;
   width: 100%;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
   line-height: 1;
   letter-spacing: 1px;
   background: black;
@@ -12,6 +13,7 @@ export const Foot = styled.div `
   bottom: 0px;
   color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 `

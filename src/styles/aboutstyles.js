@@ -22,7 +22,7 @@ export const Segment = styled.div `
   // border: 1px solid red;
   height: ${props => blank(props.blank)};
   margin: 0 20px;
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1;
   letter-spacing: 1px;
   display: flex;

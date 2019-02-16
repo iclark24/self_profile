@@ -8,7 +8,7 @@ const blank = (val) => {
 }
 
 export const Option = styled.a `
-  border: 1px solid green;
+  // border: 1px solid green;
   height: 300px;
   width: 175px;
   margin: 30px 30px;
@@ -20,10 +20,11 @@ export const Option = styled.a `
   justify-content: flex-start;
   cursor: pointer;
   color: white;
+  text-align: center;
 `
 
 export const Segment = styled.div `
-  border: 1px solid red;
+  // border: 1px solid red;
   height: ${props => blank(props.blank)};
   margin: 0 20px;
   display: flex;
@@ -32,9 +33,9 @@ export const Segment = styled.div `
 `
 
 export const Img = styled.img `
+  // border: 1px solid yellow;
   height: 150px;
   width: 100%;
   margin-bottom: 20px;
-  border: 1px solid yellow;
   border-radius: 20px;
 `
