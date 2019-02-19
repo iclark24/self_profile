@@ -1,5 +1,5 @@
 import React from "react";
-import {Segment, Option, Img} from "../styles/projectstyles"
+import {Segment, Option, Img, Blub} from "../styles/projectstyles"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import dnd from '../Images/dnd.png'
 import sky from '../Images/Sky_SLC_White.svg'
@@ -52,7 +52,7 @@ const Projects = () => (
         </Option>
       </ReactCSSTransitionGroup>
     </Segment>
-  <Segment blank/>
+  <Blub/>
   <Segment position="bottom">
       <ReactCSSTransitionGroup
         transitionName="link3"

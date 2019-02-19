@@ -1,5 +1,5 @@
 import React from "react";
-import {Segment, Option, Img, Segment2, Option2} from "../styles/contactstyles"
+import {Segment, Option, Img, Segment2, Option2, Blub} from "../styles/contactstyles"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import gitimage from '../Images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png'
 import linked from '../Images/linkedin_logo_package/LinkedIn [in]/Screen/White/In-White-128px-TM.png'
@@ -18,7 +18,7 @@ const Contacts = () => (
         transitionLeave={false}
       >
         <Option>
-          <h1>Ian Clark</h1>
+          Ian Clark
         </Option>
       </ReactCSSTransitionGroup>
       <ReactCSSTransitionGroup
@@ -29,7 +29,7 @@ const Contacts = () => (
         transitionLeave={false}
       >
         <Option >
-          <h1>(435) 339-4110</h1>
+          (435) 339-4110
         </Option>
       </ReactCSSTransitionGroup>
       <ReactCSSTransitionGroup
@@ -40,11 +40,11 @@ const Contacts = () => (
         transitionLeave={false}
       >
         <Option href="" target="_blank">
-          <h1>clarksware24@gmail.com</h1>
+          clarksware24@gmail.com
         </Option>
       </ReactCSSTransitionGroup>
     </Segment>
-  <Segment blank/>
+  <Blub/>
   <Segment2 position="bottom">
       <ReactCSSTransitionGroup
         transitionName="link3"
@@ -88,7 +88,7 @@ const Contacts = () => (
       >
         <Option2 href={resume} download>
           <Icon name="file pdf" inverted size="huge"/>
-          <h2>Resume</h2>
+          Resume
         </Option2>
       </ReactCSSTransitionGroup>
     </Segment2>

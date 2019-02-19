@@ -78,7 +78,7 @@ const Wallpaper = () => (
                       "mode": "repulse"
                     },
                     "onclick": {
-                      "enable": true,
+                      "enable": false,
                       "mode": "push"
                     },
                     "resize": true
@@ -109,19 +109,11 @@ const Wallpaper = () => (
                   }
                 },
                 "retina_detect": true,
-                "config_demo": {
-                  "hide_card": false,
-                  "background_color": "#b61924",
-                  "background_image": "",
-                  "background_position": "50% 50%",
-                  "background_repeat": "no-repeat",
-                  "background_size": "cover"
-                }
             	}}
               style={{
                 width: '100%',
                 position: "relative",
-                height: "100%",
+                height: "100vh",
                 zIndex: 1,
               }}
             />

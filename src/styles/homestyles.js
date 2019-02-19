@@ -3,11 +3,11 @@ import styled from 'styled-components';
 const grow = (full) => {
   switch(full) {
     case false:
-      return '7em';
+      return '5vw';
     case true:
       return '45vw';
     default:
-      return '7em';
+      return '5vw';
   }
 }
 
@@ -55,7 +55,7 @@ const active = (val) => {
 
 export const Ian = styled.h1`
   color: ${props => colors(props.grow)};
-  font-size: 4em !important;
+  font-size: 3vw;
   cursor: pointer;
   z-index: 200;
   padding-top: 20px;
@@ -77,7 +77,7 @@ export const Container = styled.div `
 
 export const Content = styled.div `
   display: flex;
-  height: 90%;
+  height: 82%;
   flex-direction: column;
   position: relative;
   justify-content: center;

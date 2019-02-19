@@ -1,18 +1,13 @@
 import styled from 'styled-components';
 
-const blank = (val) => {
-  if (val === true)
-    return "17vh"
-  else
-    return "100%"
-}
 
 export const Option = styled.div `
   // border: 1px solid green;
-  height: 100px;
-  width: 100%;
-  margin: 5px 30px;
-  font-size: 1em;
+  font-size: 1.75vw;
+  font-weight: bold;
+  height: 3vw;
+  width: auto;
+  margin: .5vw 1vw;
   line-height: 1;
   letter-spacing: 1px;
   display: flex;
@@ -23,10 +18,10 @@ export const Option = styled.div `
 
 export const Option2 = styled.a `
   // border: 1px solid green;
-  height: 125px;
-  width: 125px;
-  margin: 30px;
-  font-size: 1em;
+  height: 7vw;
+  width: 7vw;
+  margin: 1vw;
+  font-size: 1.25vw;
   line-height: 1;
   letter-spacing: 1px;
   display: flex;
@@ -37,21 +32,38 @@ export const Option2 = styled.a `
   color: white;
 `
 
+export const Blub = styled.div `
+  // border: 1px solid green;
+  width: 100%;
+  height: 20%;
+`
+
 export const Segment = styled.div `
   // border: 1px solid red;
-  width: 100%;
-  height: ${props => blank(props.blank)};
-  margin: 0 20px;
+  height: ${props => heights(props.position)};
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  ${props => margins(props.position)};
+  font-size: 1.25vw;
+  line-height: 1;
+  letter-spacing: 1px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  // overflow-y: scroll !important;
 `
 
 export const Segment2 = styled.div `
   // border: 1px solid red;
-  height: ${props => blank(props.blank)};
-  width: 80%;
-  margin: 0 20px;
+  height: ${props => heights(props.position)};
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  ${props => margins(props.position)};
+  font-size: 1.25vw;
+  line-height: 1;
+  letter-spacing: 1px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -61,6 +73,28 @@ export const Segment2 = styled.div `
 
 export const Img = styled.img `
   // border: 1px solid yellow;
-  height: 100px;
-  width: 100px;
+  height: 6vw;
+  width: 6vw;
 `
+
+const heights = (position) => {
+  switch(position) {
+    case "top":
+      return `35%`
+    case "bottom":
+      return `40%`
+    default:
+      return null
+  }
+}
+
+const margins = (position) => {
+  switch(position) {
+    case "top":
+      return `margin-top: 5%`
+    case "bottom":
+      return null
+    default:
+      return null
+  }
+}

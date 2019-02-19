@@ -64,9 +64,15 @@ class Home extends React.Component {
                 transitionLeave={false}
               >
                 <Menu visible={open}>
-                  <Tab visible={open} name='about' border="right" active={activeItem === 'about'} onClick={this.setAbout}>About</Tab>
-                  <Tab visible={open} name='projects' active={activeItem === 'projects'} onClick={this.setProjects}>Projects</Tab>
-                  <Tab visible={open} name='contact' border="left" active={activeItem === 'contact'} onClick={this.setContact}>Contact</Tab>
+                  <Tab visible={open} name='about' border="right" active={activeItem === 'about'} onClick={this.setAbout}>
+                    <p>About</p>
+                  </Tab>
+                  <Tab visible={open} name='projects' active={activeItem === 'projects'} onClick={this.setProjects}>
+                    <p>Projects</p>
+                  </Tab>
+                  <Tab visible={open} name='contact' border="left" active={activeItem === 'contact'} onClick={this.setContact}>
+                    <p>Contact</p>
+                  </Tab>
                 </Menu>
                 <Content>
                   {this.renderContent(open)}
