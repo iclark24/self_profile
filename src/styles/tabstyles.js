@@ -20,6 +20,10 @@ export const Menu = styled.div `
 
 `
 
+export const P = styled.p `
+  margin-top: 0.5vw !important;
+`
+
 export const Tab = styled.div `
   width: 33.33%;
   background: ${props => active(props.active)};

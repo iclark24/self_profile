@@ -1,6 +1,6 @@
 import React from "react"
 import {Ian, Bubble, Content} from "../styles/homestyles"
-import {Menu, Tab} from "../styles/tabstyles"
+import {Menu, Tab, P} from "../styles/tabstyles"
 import Projects from "../components/Projects"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import About from "./About"
@@ -65,13 +65,13 @@ class Home extends React.Component {
               >
                 <Menu visible={open}>
                   <Tab visible={open} name='about' border="right" active={activeItem === 'about'} onClick={this.setAbout}>
-                    <p>About</p>
+                    <P>About</P>
                   </Tab>
                   <Tab visible={open} name='projects' active={activeItem === 'projects'} onClick={this.setProjects}>
-                    <p>Projects</p>
+                    <P>Projects</P>
                   </Tab>
                   <Tab visible={open} name='contact' border="left" active={activeItem === 'contact'} onClick={this.setContact}>
-                    <p>Contact</p>
+                    <P>Contact</P>
                   </Tab>
                 </Menu>
                 <Content>

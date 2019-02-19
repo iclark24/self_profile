@@ -6,7 +6,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 const About = () => (
   <>
 
-    <Segment position="top">
+    <Segment position="top" className="css-scrollbar">
       <ReactCSSTransitionGroup
       transitionName="tab1"
       transitionAppear={true}
@@ -24,7 +24,7 @@ const About = () => (
       </ReactCSSTransitionGroup>
     </Segment>
       <Blub/>
-    <Segment position="bottom">
+    <Segment position="bottom" className="css-scrollbar">
       <ReactCSSTransitionGroup
       transitionName="tab2"
       transitionAppear={true}

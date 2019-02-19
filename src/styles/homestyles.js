@@ -95,4 +95,5 @@ export const Bubble = styled.div`
   position: absolute;
   transition: 1s ease-in-out;
   overflow: hidden;
+
 `
