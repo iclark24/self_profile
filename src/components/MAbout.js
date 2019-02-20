@@ -1,13 +1,11 @@
 import React from "react";
-import {Segment, Blub,} from "../styles/aboutstyles"
-// import {MSegment, MBlub,} from "../styles/mobileaboutstyles"
+import {MSegment, MBlub,} from "../styles/mobileaboutstyles"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {isMobile} from 'react-device-detect';
 
-const About = () => (
+const MAbout = () => (
   <>
 
-    <Segment position="top" className="css-scrollbar">
+    <MSegment position="top" className="css-scrollbar">
       <ReactCSSTransitionGroup
       transitionName="tab1"
       transitionAppear={true}
@@ -23,9 +21,9 @@ const About = () => (
           I am a Certified Scrum Master via Scrum.org, Python 2.x by ExpertRating.com, and I am interested in learning Go and Unity.
         </p>
       </ReactCSSTransitionGroup>
-    </Segment>
-      <Blub/>
-    <Segment position="bottom" className="css-scrollbar">
+    </MSegment>
+      <MBlub/>
+    <MSegment position="bottom" className="css-scrollbar">
       <ReactCSSTransitionGroup
       transitionName="tab2"
       transitionAppear={true}
@@ -39,8 +37,8 @@ const About = () => (
           In my free time I like to play Dungeons and Dragons, watch movies with my wife, play video games, and try new recipes.
         </p>
       </ReactCSSTransitionGroup>
-    </Segment>
+    </MSegment>
   </>
 );
 
-export default About;
+export default MAbout;

@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.8.1",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-device-detect": "^1.6.2",
     "react-dom": "^16.8.1",
     "react-load-script": "^0.0.6",
     "react-particles-js": "^2.4.2",

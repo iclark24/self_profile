@@ -3,11 +3,22 @@ import styled from 'styled-components';
 const grow = (full) => {
   switch(full) {
     case false:
-      return '5vw';
+      return '20vw';
     case true:
-      return '45vw';
+      return '100vw';
     default:
-      return '5vw';
+      return '20vw';
+  }
+}
+
+const hgrow = (full) => {
+  switch(full) {
+    case false:
+      return '20vw';
+    case true:
+      return '100vh';
+    default:
+      return '20vw';
   }
 }
 
@@ -16,7 +27,7 @@ const square = (full) => {
     case false:
       return '100%';
     case true:
-      return '5%';
+      return '0';
     default:
       return "100%";
   }
@@ -53,43 +64,32 @@ const active = (val) => {
     return "rgba(255, 255, 255, 0)"
 }
 
-export const Ian = styled.p`
+export const MIan = styled.p`
   color: ${props => colors(props.grow)};
-  font-size: 3vw;
+  position: absolute;
+  font-size: 12vw;
   cursor: pointer;
   z-index: 200;
-  padding-top: 3vw;
+  // padding-top: 12vw;
   font-family: 'Monoton', cursive;
-  `
-
-export const Container2 = styled.div `
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-  width: 1px;
-  max-width: 100vw;
-  height: 1px;
-  // margin: 0 47%;
-  // border: 1px solid red;
 `
-export const Container = styled.div `
+
+export const MContainer = styled.div `
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  width: 100vw;
-  max-width: 100vw;
+  width: 5em;
+  max-width: 45vw;
   height: 100vh;
-  // margin: 0 47%;
-  // border: 1px solid blue;
+  margin: 0 47%;
+  // border: 1px solid red;
 `
 
-export const Content = styled.div `
+export const MContent = styled.div `
   display: flex;
-  height: 82%;
+  height: 91%;
   flex-direction: column;
   position: relative;
   justify-content: center;
@@ -97,14 +97,15 @@ export const Content = styled.div `
   // border: 1px solid cyan;
 `
 
-export const Bubble = styled.div`
+export const MBubble = styled.div`
   background-color: ${props => bcolors(props.grow)};
   width: ${props => grow(props.grow)};
-  height: ${props => grow(props.grow)};
+  height: ${props => hgrow(props.grow)};
   color: ${props => colors(props.grow)};
   border: 2px solid black;
   border-radius: ${props => square(props.grow)};
   position: absolute;
   transition: 1s ease-in-out;
   overflow: hidden;
+  z-index: 2;
 `

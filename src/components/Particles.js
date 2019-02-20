@@ -112,9 +112,11 @@ const Wallpaper = () => (
             	}}
               style={{
                 width: '100%',
-                position: "relative",
+                position: "absolute",
                 height: "100vh",
                 zIndex: 1,
+                top: 0,
+                left: 0,
               }}
             />
 );
