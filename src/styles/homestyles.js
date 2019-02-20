@@ -53,6 +53,17 @@ const active = (val) => {
     return "rgba(255, 255, 255, 0)"
 }
 
+const glow = (val) => {
+  if (val !== true)
+    return `
+    animation-name: glowing-border;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    `
+
+}
+
 export const Ian = styled.p`
   color: ${props => colors(props.grow)};
   font-size: 3vw;
@@ -107,4 +118,21 @@ export const Bubble = styled.div`
   position: absolute;
   transition: 1s ease-in-out;
   overflow: hidden;
+  ${props => glow(props.grow)}
+
+  @keyframes glowing-border {
+    from {
+      border: 3px solid #b29d72 ;
+      
+      
+    }
+    
+    to {
+      outline: none;
+      border: 3px solid cyan;
+      box-shadow: 1px 1px 10px cyan;
+      
+    }
+  }
+  
 `

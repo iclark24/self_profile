@@ -57,11 +57,15 @@ const bcolors = (full) => {
 }
 
 
-const active = (val) => {
-  if (val === true)
-    return "rgba(255, 255, 255, 0.5)"
-  else
-    return "rgba(255, 255, 255, 0)"
+const glow = (val) => {
+  if (val !== true)
+    return `
+    animation-name: glowing-border;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    `
+
 }
 
 export const MIan = styled.p`
@@ -108,4 +112,21 @@ export const MBubble = styled.div`
   transition: 1s ease-in-out;
   overflow: hidden;
   z-index: 2;
+  ${props => glow(props.grow)}
+
+  @keyframes glowing-border {
+    from {
+      border: 3px solid #b29d72 ;
+      
+      
+    }
+    
+    to {
+      outline: none;
+      border: 3px solid cyan;
+      box-shadow: 1px 1px 10px cyan;
+      
+    }
+  }
+  
 `
