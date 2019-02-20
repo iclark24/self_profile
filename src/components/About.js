@@ -16,7 +16,7 @@ const About = () => (
       transitionLeave={false}
       >
         <p>
-          Hi, my name is Ian Clark and I am a full stack web developer located in Salt Lake City, Utah.
+          Hi, my name is Ian Clark and I am a Full-Stack Web Engineer located in Salt Lake City, Utah.
           <br/>
           I graduated from the University of Utah / Dev Point Labs Professional Education Course - Full Stack Web Development, and participated in Idevops - Devops Internship. I am dedicated to providing clean, impeccable code.
         </p>
