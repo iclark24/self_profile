@@ -11,7 +11,7 @@ const position = (position) => {
   }
 }
 
-export const MSegment = styled.div `
+export const Segment = styled.div `
   // border: 1px solid red;
   height: ${props => heights(props.position)};
   margin-left: 20px;
@@ -27,7 +27,7 @@ export const MSegment = styled.div `
   overflow-y: scroll !important;
 `
 
-export const MBlub = styled.div `
+export const Blub = styled.div `
   // border: 1px solid green;
   width: 100%;
   height: 10%;
