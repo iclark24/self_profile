@@ -1,5 +1,5 @@
 import React from "react";
-import {Segment, Option, Img, Blub} from "../styles/projectstyles"
+import {Segment, Option, Img, Blub} from "../styles/mobileprojectstyles"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import dnd from '../Images/dnd.png'
 import sky from '../Images/Sky_SLC_White.svg'

@@ -11,13 +11,6 @@ const position = (position) => {
   }
 }
 
-const blank = (val) => {
-  if (val === true)
-    return "10vh"
-  else
-    return "60%"
-}
-
 export const MSegment = styled.div `
   // border: 1px solid red;
   height: ${props => heights(props.position)};

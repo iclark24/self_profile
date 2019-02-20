@@ -1,5 +1,5 @@
 import React from "react";
-import {Segment, Option, Img, Segment2, Option2, Blub} from "../styles/contactstyles"
+import {Segment, Option, Img, Segment2, Option2, Blub} from "../styles/mobilecontactstyles"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import gitimage from '../Images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png'
 import linked from '../Images/linkedin_logo_package/LinkedIn [in]/Screen/White/In-White-128px-TM.png'
